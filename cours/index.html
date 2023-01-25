@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Css</title>
+</head>
+<body>
+    <p id="interne">mon style est interne</p>
+    <p id="externe">mon style est externe</p>
+    <!--1. inline -->
+    <p style ="color:red;">mon style est inline</p>
+
+    <!--2. feuille de style interne  -->
+    <style>
+        #interne{
+            color:blue;
+        }
+    </style>
+    <!--3. feuille de style externe  -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Selector { declaration => propriété : valeur  ;} -->
+    <!--
+        #mondiv {
+        background-color : red;
+        margin : 10px;
+    } -->
+
+    <!-- 
+        les selecteurs : groupe des elements en fonction de CRITERES
+        -simple (balise, id, class)
+        -combinés (relations entre éléments)
+        -pseudo-class : état de l'élément (ex : a:hover)
+        -pseudo-element : partie de l'élément (ex : p::first-letter)
+    -->
+
+    <!-- 
+        synthaxe :
+        # id
+        .class
+        * tous les éléments
+        p selects all p elements
+        p, div, span : selects all elements
+        combinaisons :
+        descendant (space)
+        ex : div h1 ou div > h1 => selectionne les h1 contenu par une div
+        first sibling (+) div + p => selectionne les premiers éléments p situés au même niveau qu'une div
+        all siblings (~) div~p => selectionne tous les éléments p situés au même niveau qu'une div 
+        /*commentaires*/
+     -->
+
+     <!-- 
+        unités :
+         .absolute :
+            -cm
+            -mm
+            -in (2,54cm)
+            -px (relative to dpi)
+            -pt 1/72 in
+            -pc 12pt
+
+        .relative
+            -em : font-size d'un element defini par le navigateur
+            -ex : hauteur du x
+            -ch : relative width
+            -rem : font-size de l'élément de base
+            -vw : 1% viewport width
+            -vh : 1% viewport height
+            -vmin : 1% viewport min
+            -vmax : 1% viewport max
+            % : relatif à l'élément parent
+      -->
+
+      <!-- 
+        les couleurs :
+            -names ("purple") 
+            -RGB (120, 23, 17)
+            -RGBA (120, 23, 17, 0, 5)
+            -HEX (#FF14533)
+            -HSL (ColorWheel 0-360°, Saturation : 0-100%, lightness : 0-100%)
+       -->
+
+       <!-- 
+        layout :
+            -margin / padding
+            -height / width
+            -background
+        -->
+</body>
+</html>

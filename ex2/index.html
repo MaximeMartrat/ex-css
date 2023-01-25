@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8 />
+    <title>JS DOM manip</title>
+</head> 
+<body>
+     <!-- Modifiez en utilisant JS  le style du paragraphe (couleurs de texte et fond) dans le html suivant : -->
+    <p id ='text'>Javascript c'est super !</p>
+    <p id ='text'>Javascript c'est super !</p>
+    <p id ='text'>Javascript c'est super !</p> 
+    <div>
+        <button id="jsstyle" onclick="js_style()">Style</button>
+    </div>
+    <script>
+        function js_style(){
+            let paraph = document.querySelectorAll("p")
+            paraph.forEach((para)=> {
+            para.style.color = "red";
+            para.style.backgroundColor = "yellow";
+            })
+        }
+    </script>
+</body>
+</html> 
