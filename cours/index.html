@@ -91,8 +91,39 @@
         -->
 
         <!-- 
-            
+           -max, min / pour le responsive permet d'adapter des tailles en fonction des écrans. 
          -->
+        
+         <!-- 
+            pour utiliser les media queries la balise head doit contenir la balise suivante :
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+            CSS media queries
+
+            max-width ex :
+            @media screen and (max-width: 640px) {
+                .small {
+                    background: red;
+                    color: white;
+                }
+                .precisions span:reglel {
+                    display:block;
+                }
+            }
+
+            min-width ex :
+            @media screen and (min-width : 800px){
+
+            }
+            
+          -->
+
+          <!-- 
+            rules for better user experience :
+                -do NOT use large fixed width...=> horizontal scroll
+                -do NOT rely on ONE viewport
+                -use MEDIA QUERIES to apply styles depending on screen size
+           -->
          <div id="container">
             <div id="black">black box(z-index 1)</div>
             <div id="grey">grey box(z-index 2)</div>
