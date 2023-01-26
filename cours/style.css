@@ -1,3 +1,33 @@
 #externe{
     color:green;
 }
+#container{
+    position: relative;
+    border: 1px solid red;
+}
+#black{
+    position: relative;
+    z-index: 1;
+    border: 2px solid black;
+    height: 100px;
+}
+#grey{
+    position: relative;
+    z-index: 2;
+    background: lightgray;
+    height: 60px;
+    width: 70%;
+    left: 0px;
+    top: 0px;
+    float: right;
+}
+#green{
+    clear: both;
+    position: relative;
+    z-index: 3;
+    background: lightgreen;
+    height: 100px;
+    width:30%;
+    left:0px;
+    top: 0px;
+}

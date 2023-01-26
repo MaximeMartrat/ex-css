@@ -1,0 +1,56 @@
+#div1{
+    position: absolute;
+    height:200px;
+    width:200px;
+    border-radius: 100px;
+    animation: 3s linear 1s infinite alternate example;
+    }
+#div2{
+    position: absolute;
+    height:200px;
+    width:200px;
+    border-radius: 100px;
+    animation: 1s linear 1s infinite alternate example2;
+}
+#div3{
+    position: absolute;
+    height:200px;
+    width:200px;
+    border-radius: 100px;
+    animation: 1s linear 2s infinite alternate example3;
+}
+
+@keyframes example {
+    from {background-color: blue;
+        top:550px;
+        left:0px;
+        }
+
+    to {background-color:blue;
+        top:550px;
+        left:1350px;
+        
+        }
+}
+@keyframes example2 {
+    from {background-color: red;
+        top:0px;
+        left:200px;
+        }
+
+    to {background-color:red;
+        top:550px;
+        left:200px;
+        }
+}
+@keyframes example3 {
+    from {background-color: greenyellow;
+        top:0px;
+        left:800px;
+        }
+
+    to {background-color:greenyellow;
+        top:550px;
+        left:800px;
+        }
+}
