@@ -1,3 +1,6 @@
+body{
+    background-color: rgb(37, 37, 39);
+}
 #div1{
     position: absolute;
     height:200px;
@@ -18,39 +21,73 @@
     width:200px;
     border-radius: 100px;
     animation: 1s linear 2s infinite alternate example3;
+    animation-timing-function: ease-in-out 2.5s;
 }
 
 @keyframes example {
     from {background-color: blue;
         top:550px;
-        left:0px;
+        left:-10px;
+        width: 170px;
+        border-radius: 90px;
         }
-
+    5%{
+        width:200px;
+        border-radius: 100px;
+    }
+    95%{
+        width:200px;
+        border-radius: 100px;
+    }
     to {background-color:blue;
         top:550px;
         left:1350px;
-        
+        width: 170px;
+        border-radius: 90px;
         }
 }
 @keyframes example2 {
-    from {background-color: red;
-        top:0px;
-        left:200px;
+    from {background-color: rgb(252, 11, 15);
+        top:-10px;
+        left:20px;
+        height:150px;
+        border-radius: 90px;
         }
-
-    to {background-color:red;
-        top:550px;
-        left:200px;
+    15%{
+        height:200px;
+        border-radius: 100px;
+    }
+    90%{
+        height:200px;
+        border-radius: 100px;
+    }
+    to {background-color:rgb(252, 11, 15);
+        top:620px;
+        left:20px;
+        height:120px;
+        border-radius:90px;
         }
 }
 @keyframes example3 {
     from {background-color: greenyellow;
-        top:0px;
+        top:-10px;
         left:800px;
+        height:150px;
+        border-radius: 90px;
         }
-
+    15%{
+        height:200px;
+        border-radius: 100px;
+    }
+    90%{
+        height:200px;
+        border-radius: 100px;
+    }
     to {background-color:greenyellow;
-        top:550px;
+        top:620px;
         left:800px;
+        height:120px;
+        border-radius:90px;
         }
 }
+
